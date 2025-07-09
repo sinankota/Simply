@@ -364,21 +364,29 @@ header {
   }
 
   .pen{
-    height: 30vh;
+    height: 100vh;
+    padding: 10px 20px;
+    width: 50vh;
+    height: 30vh
   }
+
   .feature {
     flex-direction: column;
     align-items: center;
+    height: 150vh;
+    background-color: #dcdcdc;
   }
 
   .card {
     flex-direction: column;
     max-width: 100%;
     align-items: center;
+    height: 50vh;
   }
 
   .card-section {
     padding: 20px;
+    background-color: #dcdcdc;
   }
 
   .card-text{
@@ -394,9 +402,7 @@ header {
   }
 
 
-  .feature-content {
-    padding: 20px;
-  }
+
 
   .feature-content img{
     width: 80vh;
