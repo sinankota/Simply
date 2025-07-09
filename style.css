@@ -351,77 +351,127 @@ header {
   cursor: pointer;
 }
 
-
 @media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+
   .navbar {
-   
-    justify-content: center   ;
-    align-items: center;
+    flex-direction: column;
+    padding: 15px 10px;
+    height: auto;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 120px;
+    margin-bottom: 10px;
   }
 
   .nav-link {
-    display: none;
-  }
-
-  .pen{
-    height: 100vh;
-    padding: 10px 20px;
-    width: 50vh;
-    height: 30vh
+    display: none; /* Use with hamburger menu */
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
 
   .feature {
     flex-direction: column;
-    align-items: center;
-    height: 150vh;
-    background-color: #dcdcdc;
+    padding: 20px 10px;
+    height: auto;
+    gap: 20px;
+  }
+
+  .pen {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .feature-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .card-section {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    height: auto;
   }
 
   .card {
     flex-direction: column;
-    max-width: 100%;
-    align-items: center;
-    height: 50vh;
+    width: 100%;
+    height: auto;
+    padding: 15px;
   }
 
-  .card-section {
-    padding: 20px;
-    background-color: #dcdcdc;
-  }
-
-  .card-text{
-    text-align: center;
-  }
-
-  .card img{
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
+  .card img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    border-radius: 5px;
   }
 
-
-
-
-  .feature-content img{
-    width: 80vh;
-    height: 50vh;
-    padding-bottom: 20px;
- 
+  .card-text {
+    text-align: center;
+    padding: 10px;
   }
-
 
   .footer-container {
     flex-direction: column;
     text-align: center;
+    gap: 30px;
   }
 
   .footer-columns {
+    flex-direction: column;
     gap: 20px;
   }
 
   .footer-column {
     width: 100%;
+  }
+
+  #btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .HOME h1 {
+    font-size: 2rem;
+  }
+
+  .HOME p {
+    font-size: 1rem;
+  }
+
+  .feature h1 {
+    font-size: 18px;
+  }
+
+  .feature p {
+    font-size: 13px;
+  }
+
+  .card-text h3 {
+    font-size: 16px;
+  }
+
+  .card-text p {
+    font-size: 13px;
   }
 }
